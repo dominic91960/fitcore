@@ -1,0 +1,23 @@
+.style-one {
+  & > div {
+    @apply rotate-180 bg-transparent;
+  }
+  & > div::before {
+    @apply translate-y-0 rotate-45;
+  }
+  & > div::after {
+    @apply translate-y-0 -rotate-45;
+  }
+}
+
+@keyframes open-menu {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.animate-open-menu {
+  animation: open-menu 1s;
+}
