@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
 import Pricing from "./components/Pricing/Pricing";
+import Process from "./components/Process/Process";
 
 const App = () => {
   return (
@@ -11,9 +12,9 @@ const App = () => {
       <Hero />
       <Contact />
       <Pricing />
+      <Process />
+      <div className="h-40 w-full bg-white"></div>
       {/*
-      Pricing
-      Process
       Footer */}
     </div>
   );

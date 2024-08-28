@@ -1,4 +1,3 @@
-import standardItem from "../../assets/Pricing/standardItem.png";
 import cardBg from "../../assets/Pricing/card-bg.png";
 import checkedCheckbox from "../../assets/Pricing/checkedCheckbox.png";
 import unCheckedCheckbox from "../../assets/Pricing/uncheckedCheckbox.png";
@@ -10,11 +9,11 @@ const data = [
   "24 hour service",
 ];
 
-const PlanItem = ({ title, price, features }) => {
+const PlanItem = ({ image, title, price, features }) => {
   return (
     <article className="mt-6 w-[180px] max-w-[280px] flex-grow bg-white text-black">
       <figure>
-        <img src={standardItem} alt="Standard plan" className="w-full" />
+        <img src={image} alt={title} className="w-full" />
       </figure>
       <div className="flex h-[34px] items-end justify-center">
         <div className="flex size-[68px] flex-col items-center justify-center rounded-full border-[6px] border-primary bg-white font-bold leading-none lg:size-[78px]">
@@ -37,7 +36,7 @@ const PlanItem = ({ title, price, features }) => {
               key={i}
               className="mt-4 flex gap-[1em] text-[11px] font-semibold lg:text-[12px]"
             >
-              <img src={src} alt="Checked checkbox" className="size-[16px]" />
+              <img src={src} alt={features[i]} className="size-[16px]" />
               <span>{e}</span>
             </li>
           );
