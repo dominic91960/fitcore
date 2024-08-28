@@ -11,12 +11,12 @@ const Navbar = () => {
     <header className="fixed top-0 z-50 w-full text-white">
       {/* MAIN NAVBAR */}
       <section
-        className={`mx-auto flex items-center justify-between px-[10vw] py-5 md:px-[5vw] 2xl:py-10 ${isToggled && "bg-black/50"}`}
+        className={`mx-auto flex items-center justify-between px-[10vw] py-5 sm:py-8 md:px-[5vw] 2xl:py-10 ${isToggled && "bg-black/50"}`}
       >
-        <h1 className="text-xl font-bold transition-transform duration-300 hover:scale-105 2xl:text-2xl">
+        <h1 className="text-sm font-semibold transition-transform duration-300 hover:scale-105 md:text-xl 2xl:text-2xl">
           <a href="#">FitCore</a>
         </h1>
-        <nav className="hidden space-x-8 text-sm md:block xl:space-x-16 2xl:text-base">
+        <nav className="hidden space-x-8 text-xs md:block xl:space-x-16 2xl:text-base">
           <a href="#" className="hover:opacity-70">
             Home
           </a>
@@ -33,10 +33,10 @@ const Navbar = () => {
           </a>
         </nav>
         <button
-          className={`${isToggled ? "style-one" : ""} relative h-8 w-6 transition-opacity duration-300 md:hidden`}
+          className={`${isToggled ? "style-one" : ""} relative h-4 w-6 transition-opacity duration-300 md:hidden`}
           onClick={handleClick}
         >
-          <div className="absolute -mt-[0.5px] h-[2px] w-full rounded bg-white transition-all duration-700 ease-in-out before:absolute before:left-0 before:h-[2px] before:w-full before:-translate-y-1.5 before:rounded before:bg-white before:transition-transform before:duration-700 before:ease-in-out after:absolute after:left-0 after:h-[2px] after:w-full after:translate-y-1.5 after:rounded after:bg-white after:transition-transform after:duration-700 after:ease-in-out"></div>
+          <div className="absolute -mt-[0.5px] h-[1px] w-full rounded bg-white transition-all duration-700 ease-in-out before:absolute before:left-0 before:h-[1px] before:w-full before:-translate-y-[6px] before:rounded before:bg-white before:transition-transform before:duration-700 before:ease-in-out after:absolute after:left-0 after:h-[1px] after:w-full after:translate-y-[6px] after:rounded after:bg-white after:transition-transform after:duration-700 after:ease-in-out"></div>
         </button>
       </section>
       {/* MOBILE MENU */}
@@ -44,7 +44,7 @@ const Navbar = () => {
         className={`${isToggled ? "flex md:hidden" : "hidden"} section-min-height animate-open-menu absolute w-full origin-top justify-center bg-black/50`}
         onClick={handleClick}
       >
-        <nav className="flex w-full flex-col px-[10vw] text-sm md:px-[5vw] 2xl:text-base">
+        <nav className="flex w-full flex-col px-[10vw] text-xs">
           <a href="#" className="py-4 hover:opacity-70">
             Home
           </a>
