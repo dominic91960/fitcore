@@ -1,3 +1,7 @@
+.section-min-height {
+  min-height: calc(100vh - 72px);
+}
+
 .style-one {
   & > div {
     @apply rotate-180 bg-transparent;
@@ -10,6 +14,10 @@
   }
 }
 
+.animate-open-menu {
+  animation: open-menu 1s;
+}
+
 @keyframes open-menu {
   from {
     transform: scaleY(0);
@@ -18,6 +26,9 @@
     transform: scaleY(1);
   }
 }
-.animate-open-menu {
-  animation: open-menu 1s;
+
+@media (min-width: 1536px) {
+  .section-min-height {
+    min-height: calc(100vh - 112px);
+  }
 }
