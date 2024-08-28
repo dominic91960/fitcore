@@ -9,7 +9,7 @@ const data = [
 
 const Contact = () => {
   return (
-    <section className="bg-gradient-to-r from-black to-[#666666] px-[10vw] py-6 md:px-[5vw] md:py-0">
+    <section className="bg-gradient-to-r from-[#101010] to-[#666666] px-[10vw] py-6 md:px-[5vw] md:py-0">
       <h2 className="text-center text-[22px] font-bold uppercase md:hidden">
         Welcome to <span className="text-primary">fitcore</span>
       </h2>

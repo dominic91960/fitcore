@@ -4,18 +4,17 @@ import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
 import Pricing from "./components/Pricing/Pricing";
 import Process from "./components/Process/Process";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="bg-[#0F0001] py-[100px] text-white">
+    <div className="bg-[#101010] text-white">
       <Navbar />
       <Hero />
       <Contact />
       <Pricing />
       <Process />
-      <div className="h-40 w-full bg-white"></div>
-      {/*
-      Footer */}
+      <Footer />
     </div>
   );
 };

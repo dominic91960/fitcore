@@ -38,7 +38,7 @@ const Hero = () => {
           </button>
         </h1>
       </div>
-      <div className="flex w-full bg-black">
+      <div className="flex w-full bg-[#101010]">
         {data.map(({ mainTxt, subTxt }, i) => (
           <article
             key={i}
