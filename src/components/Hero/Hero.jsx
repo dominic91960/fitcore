@@ -41,6 +41,7 @@ const Hero = () => {
       <div className="flex w-full bg-black">
         {data.map(({ mainTxt, subTxt }, i) => (
           <article
+            key={i}
             className={`my-4 flex w-1/3 justify-center py-4 ${i === 1 && "border-x"}`}
           >
             <figure className="w-fit">

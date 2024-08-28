@@ -28,8 +28,11 @@ const Contact = () => {
           <h3 className="text-xs font-semibold capitalize text-[#7C736E] md:my-[1em] md:text-[9px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px]">
             Meet your <span className="uppercase">coach</span>
           </h3>
-          {data.map((e) => (
-            <p className="my-[0.6em] w-[34ch] text-xs leading-normal md:w-full md:text-[9px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px]">
+          {data.map((e, i) => (
+            <p
+              key={i}
+              className="my-[0.6em] w-[34ch] text-xs leading-normal md:w-full md:text-[9px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px]"
+            >
               {e}
             </p>
           ))}
