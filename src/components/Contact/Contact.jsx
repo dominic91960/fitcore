@@ -9,7 +9,7 @@ const data = [
 
 const Contact = () => {
   return (
-    <section className="bg-gradient-to-r from-[#101010] to-[#666666] px-[10vw] py-6 md:px-[5vw] md:py-0">
+    <section className="from-secondary bg-gradient-to-r to-[#666666] px-[10vw] py-6 md:px-[5vw] md:py-0">
       <h2 className="text-center text-[22px] font-bold uppercase md:hidden">
         Welcome to <span className="text-primary">fitcore</span>
       </h2>
@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="absolute z-10 h-full w-[80%] border-b-4 border-[#04D9FF] md:hidden"></div>
         </div>
         {/* Text area */}
-        <figcaption className="flex flex-col self-center md:mb-6 md:w-[35%]">
+        <figcaption className="flex flex-col self-center text-center md:mb-6 md:w-[35%] md:text-left">
           <h2 className="hidden text-center text-[22px] font-bold uppercase md:block md:text-left md:text-[19px] lg:text-[26px] xl:text-[33px] 2xl:text-[39px]">
             Welcome to <span className="text-primary">fitcore</span>
           </h2>

@@ -15,15 +15,8 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroBg})` }}
       >
         <h1 className="relative mt-12 flex w-full flex-col items-center justify-center">
-          {/* <span
-            className="absolute bottom-[72%] w-full text-center text-[40px] font-black uppercase text-transparent sm:-top-[38%] sm:bottom-[62%] sm:text-[78px] md:-top-[40%] md:text-[102px] lg:text-[138px] xl:text-[178px] 2xl:text-[212px]"
-            style={{
-              fontFamily: "Raleway",
-              WebkitTextStroke: "calc(1em / 38) #FFFD01",
-            }}
-          > */}
           <span
-            className="absolute bottom-[72%] w-full text-center text-[40px] font-black uppercase text-transparent sm:bottom-[45%] sm:text-[78px] md:bottom-[42%] md:text-[102px] lg:bottom-[38%] lg:text-[138px] xl:bottom-[34%] xl:text-[178px] 2xl:bottom-[31%] 2xl:text-[212px]"
+            className="absolute bottom-[72%] w-full text-center text-[40px] font-black uppercase text-transparent sm:bottom-[45%] sm:text-[78px] md:bottom-[42%] md:text-[102px] lg:bottom-[38%] lg:text-[138px] xl:bottom-[34%] xl:text-[176px] 2xl:bottom-[31%] 2xl:text-[212px]"
             style={{
               fontFamily: "Raleway",
               WebkitTextStroke: "calc(1em / 38) #FFFD01",
@@ -39,7 +32,7 @@ const Hero = () => {
           </button>
         </h1>
       </div>
-      <div className="flex w-full bg-[#101010]">
+      <div className="flex w-full">
         {data.map(({ mainTxt, subTxt }, i) => (
           <article
             key={i}

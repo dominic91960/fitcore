@@ -15,7 +15,7 @@ const Footer = () => {
     "text-[7px] sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-[12px] 2xl:text-[13px]";
 
   return (
-    <footer className="bg-gradient-to-t from-[#101010] to-[#535353] px-[10vw] py-[2%] md:px-[5vw]">
+    <footer className="from-secondary bg-gradient-to-t to-[#535353] px-[10vw] py-[2%] md:px-[5vw]">
       <section>
         <div className={`flex justify-between md:px-[8vw] ${linkFontSize}`}>
           {/* Menu One */}
@@ -41,38 +41,24 @@ const Footer = () => {
             >
               Services
             </h4>
-            <a>
-              <Link
-                to="/"
-                className={`mt-[1.2em] flex items-center gap-x-[1em] ${path === "/" ? "text-primary" : "hover:opacity-70"}`}
-              >
-                <span className="text-[2em]">&#62;</span> Home
-              </Link>
-            </a>
-            <a>
-              <Link
-                to="/trainers"
-                className={`flex items-center gap-x-[1em] ${path === "/trainers" ? "text-primary" : "hover:opacity-70"}`}
-              >
-                <span className="text-[2em]">&#62;</span> Our Trainers
-              </Link>
-            </a>
-            <a>
-              <Link
-                to="/"
-                className={`flex items-center gap-x-[1em] ${path === "/pricing" ? "text-primary" : "hover:opacity-70"}`}
-              >
-                <span className="text-[2em]">&#62;</span> Pricing & Plans
-              </Link>
-            </a>
-            <a>
-              <Link
-                to="/contact"
-                className={`flex items-center gap-x-[1em] ${path === "/contact" ? "text-primary" : "hover:opacity-70"}`}
-              >
-                <span className="text-[2em]">&#62;</span> Contact
-              </Link>
-            </a>
+            <Link
+              to="/"
+              className={`mt-[1.2em] flex items-center gap-x-[1em] ${path === "/" ? "text-primary" : "hover:opacity-70"}`}
+            >
+              <span className="text-[2em]">&#62;</span> Home
+            </Link>
+            <Link
+              to="/trainers"
+              className={`flex items-center gap-x-[1em] ${path === "/trainers" ? "text-primary" : "hover:opacity-70"}`}
+            >
+              <span className="text-[2em]">&#62;</span> Our Trainers
+            </Link>
+            <Link
+              to="/contact"
+              className={`flex items-center gap-x-[1em] ${path === "/contact" ? "text-primary" : "hover:opacity-70"}`}
+            >
+              <span className="text-[2em]">&#62;</span> Contact
+            </Link>
           </nav>
           {/* Menu Three*/}
           <ul>
