@@ -26,7 +26,10 @@ const data = [
 
 const Pricing = () => {
   return (
-    <section className="px-[10vw] pb-12 text-center sm:py-8 md:px-[5vw]">
+    <section
+      id="pricing"
+      className="px-[10vw] pb-12 text-center sm:py-8 md:px-[5vw]"
+    >
       <h2 className="mt-4 text-[14px] font-semibold uppercase text-primary md:text-[16px] lg:text-[18px]">
         Pricing plan
       </h2>

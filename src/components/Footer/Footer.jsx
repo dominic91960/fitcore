@@ -1,3 +1,4 @@
+import { Link, useLocation } from "react-router-dom";
 import fb from "../../assets/Footer/facebook.png";
 import li from "../../assets/Footer/linked-in.png";
 import tw from "../../assets/Footer/twitter.png";
@@ -5,7 +6,9 @@ import ig from "../../assets/Footer/instagram.png";
 import cp from "../../assets/Footer/copyright.png";
 
 const Footer = () => {
+  const path = useLocation().pathname;
   const date = new Date();
+
   const titleFontSize =
     "text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px]";
   const linkFontSize =
@@ -38,17 +41,37 @@ const Footer = () => {
             >
               Services
             </h4>
-            <a href="#" className="mt-[1.2em] flex items-center gap-x-[1em]">
-              <span className="text-[2em]">&#62;</span> Home
+            <a>
+              <Link
+                to="/"
+                className={`mt-[1.2em] flex items-center gap-x-[1em] ${path === "/" ? "text-primary" : "hover:opacity-70"}`}
+              >
+                <span className="text-[2em]">&#62;</span> Home
+              </Link>
             </a>
-            <a href="#" className="flex items-center gap-x-[1em]">
-              <span className="text-[2em]">&#62;</span> Our Trainers
+            <a>
+              <Link
+                to="/trainers"
+                className={`flex items-center gap-x-[1em] ${path === "/trainers" ? "text-primary" : "hover:opacity-70"}`}
+              >
+                <span className="text-[2em]">&#62;</span> Our Trainers
+              </Link>
             </a>
-            <a href="#" className="flex items-center gap-x-[1em]">
-              <span className="text-[2em]">&#62;</span> Pricing & Plans
+            <a>
+              <Link
+                to="/"
+                className={`flex items-center gap-x-[1em] ${path === "/pricing" ? "text-primary" : "hover:opacity-70"}`}
+              >
+                <span className="text-[2em]">&#62;</span> Pricing & Plans
+              </Link>
             </a>
-            <a href="#" className="flex items-center gap-x-[1em]">
-              <span className="text-[2em]">&#62;</span> Contact
+            <a>
+              <Link
+                to="/contact"
+                className={`flex items-center gap-x-[1em] ${path === "/contact" ? "text-primary" : "hover:opacity-70"}`}
+              >
+                <span className="text-[2em]">&#62;</span> Contact
+              </Link>
             </a>
           </nav>
           {/* Menu Three*/}
@@ -69,24 +92,24 @@ const Footer = () => {
         <div className="flex flex-col justify-between md:flex-row-reverse md:items-baseline md:px-[8vw]">
           <ul className="mt-[1.2em] flex justify-center gap-[1.5em]">
             <li>
-              <a href="#">
-                <img src={fb} alt="Facebook" className="w-4 sm:w-full" />
-              </a>
+              <Link to="https://www.facebook.com/">
+                <img src={fb} alt="Facebook link" className="w-4 sm:w-full" />
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <img src={li} alt="Facebook" className="w-4 sm:w-full" />
-              </a>
+              <Link to="https://www.facebook.com/">
+                <img src={li} alt="Linked in link" className="w-4 sm:w-full" />
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <img src={tw} alt="Facebook" className="w-4 sm:w-full" />
-              </a>
+              <Link to="https://www.facebook.com/">
+                <img src={tw} alt="Twitter link" className="w-4 sm:w-full" />
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <img src={ig} alt="Facebook" className="w-4 sm:w-full" />
-              </a>
+              <Link to="https://www.facebook.com/">
+                <img src={ig} alt="Instagram link" className="w-4 sm:w-full" />
+              </Link>
             </li>
           </ul>
           <p
