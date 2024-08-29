@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroBg from "../../assets/Hero/hero-bg.png";
+import heroBg from "../../assets/Home/Hero/hero-bg.png";
 
 const data = [
   { mainTxt: "10+", subTxt: ["Years", "experience"] },

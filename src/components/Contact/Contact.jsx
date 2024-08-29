@@ -1,4 +1,4 @@
-import img from "../../assets/Contact/img.png";
+import img from "../../assets/Home/Contact/img.png";
 
 const data = [
   "Your Strength, Our Priority. FitCore provides premium gear to fuel your fitness journey.",

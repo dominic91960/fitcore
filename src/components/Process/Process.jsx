@@ -1,8 +1,8 @@
-import processBg from "../../assets/Process/processBg.png";
-import connect from "../../assets/Process/connect.png";
-import choose from "../../assets/Process/choose.png";
-import schedule from "../../assets/Process/schedule.png";
-import change from "../../assets/Process/change.png";
+import processBg from "../../assets/Home/Process/processBg.png";
+import connect from "../../assets/Home/Process/connect.png";
+import choose from "../../assets/Home/Process/choose.png";
+import schedule from "../../assets/Home/Process/schedule.png";
+import change from "../../assets/Home/Process/change.png";
 
 const data = [
   { img: connect, txt: "Connect with us" },

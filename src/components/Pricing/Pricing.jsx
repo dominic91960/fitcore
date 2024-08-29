@@ -1,7 +1,7 @@
 import PlanItem from "./PlanItem";
-import standardItem from "../../assets/Pricing/standardItem.png";
-import premiumItem from "../../assets/Pricing/premiumItem.png";
-import platinumItem from "../../assets/Pricing/platinumItem.png";
+import standardItem from "../../assets/Home/Pricing/standardItem.png";
+import premiumItem from "../../assets/Home/Pricing/premiumItem.png";
+import platinumItem from "../../assets/Home/Pricing/platinumItem.png";
 
 const data = [
   {

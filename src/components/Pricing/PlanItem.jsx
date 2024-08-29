@@ -1,6 +1,6 @@
-import cardBg from "../../assets/Pricing/card-bg.png";
-import checkedCheckbox from "../../assets/Pricing/checkedCheckbox.png";
-import unCheckedCheckbox from "../../assets/Pricing/uncheckedCheckbox.png";
+import cardBg from "../../assets/Home/Pricing/card-bg.png";
+import checkedCheckbox from "../../assets/Home/Pricing/checkedCheckbox.png";
+import unCheckedCheckbox from "../../assets/Home/Pricing/uncheckedCheckbox.png";
 
 const data = [
   "Personal trainer",
