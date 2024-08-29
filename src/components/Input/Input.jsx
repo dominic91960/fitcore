@@ -5,7 +5,7 @@ const Input = ({ type, name, placeholder }) => {
       id={name}
       name={name}
       placeholder={placeholder}
-      className="mb-[0.7em] w-[28ch] px-[0.8em] py-[0.4em] text-[12px] text-black placeholder:capitalize sm:text-[13px] md:text-[14px] lg:w-[30ch] lg:text-[16px] xl:w-[33ch] xl:text-[17px]"
+      className="mb-[0.7em] w-[28ch] px-[0.8em] py-[0.4em] text-[12px] text-black placeholder:capitalize sm:w-full sm:px-[1em] sm:py-[0.6em] lg:text-[13px] 2xl:text-[14px]"
       required
     />
   );

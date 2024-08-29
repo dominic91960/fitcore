@@ -69,7 +69,7 @@ const Contact = () => {
           ))}
         </article>
       </section>
-      <section className="h-[200px] sm:h-[450px]">
+      {/* <section className="h-[200px] sm:h-[450px]">
         <iframe
           title="location"
           width="100%"
@@ -78,13 +78,13 @@ const Contact = () => {
         >
           <a href="https://www.gps.ie/">gps trackers</a>
         </iframe>
-      </section>
+      </section> */}
       <section className="bg-[url('./assets/Contact/form-bg.png')] bg-cover bg-center px-[10vw] md:px-[5vw]">
         <form
           onSubmit={handleFormSubmit}
-          className="flex w-fit flex-col py-[12%] text-center sm:text-left"
+          className="flex w-fit flex-col py-[8%] text-center sm:pb-[12%] sm:pt-[6%] sm:text-left"
         >
-          <h2 className="mb-[1em] font-semibold leading-tight sm:mb-[0.8em] sm:text-[28px] md:text-[31px] lg:text-[39px] xl:text-[45px]">
+          <h2 className="mb-[1em] font-semibold leading-tight sm:mb-[0.8em] sm:text-[28px] md:text-[33px] lg:text-[36px] xl:text-[46px] 2xl:text-[55px]">
             Have questions? <br /> Get in touch!
           </h2>
           <Input type="text" name="name" placeholder="Name" />
@@ -95,9 +95,9 @@ const Contact = () => {
             id="message"
             rows="4"
             placeholder="Message"
-            className="mb-[0.7em] w-[28ch] px-[0.8em] py-[0.4em] text-[12px] text-black placeholder:capitalize sm:text-[13px] md:text-[14px] lg:w-[30ch] lg:text-[16px] xl:w-[33ch] xl:text-[17px]"
+            className="mb-[0.7em] w-[28ch] px-[0.8em] py-[0.4em] text-[12px] text-black placeholder:capitalize sm:w-full sm:px-[1em] sm:py-[0.6em] lg:text-[13px] 2xl:text-[14px]"
           ></textarea>
-          <button className="mx-auto mt-[0.8em] w-fit bg-primary px-[1.2em] py-[0.2em] text-[12px] font-extrabold uppercase text-black sm:w-3/5 sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[17px]">
+          <button className="mx-auto mt-[0.8em] w-fit bg-primary px-[1.2em] py-[0.2em] text-[13px] font-extrabold uppercase text-black sm:w-3/5 lg:text-[14px] 2xl:text-[15px]">
             Send
           </button>
         </form>
