@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroBg from "../../assets/Hero/hero-bg.png";
 
 const data = [
@@ -34,7 +35,7 @@ const Hero = () => {
             Begin your <br /> fitness journey
           </span>
           <button className="mx-auto my-3 w-fit bg-primary px-2 py-1 text-[10px] font-extrabold uppercase text-black md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-            Register now
+            <Link to="/register">Register now</Link>
           </button>
         </h1>
       </div>
