@@ -1,12 +1,11 @@
-import bg from "../assets/Trainers/bg.png";
+import ImageSection from "../components/ImageSection/ImageSection";
+import bgMobile from "../assets/Trainers/bg-mobile.png";
+import bgDesktop from "../assets/Trainers/bg-desktop.png";
 
 const Trainers = () => {
   return (
     <>
-      <section
-        className="h-[250px] bg-cover bg-top sm:h-[50vh] sm:min-h-[400px]"
-        style={{ backgroundImage: `url(${bg})` }}
-      ></section>
+      <ImageSection alt="A trainer" bgMobile={bgMobile} bgDesktop={bgDesktop} />
     </>
   );
 };

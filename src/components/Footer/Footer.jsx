@@ -15,7 +15,7 @@ const Footer = () => {
     "text-[7px] sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-[12px] 2xl:text-[13px]";
 
   return (
-    <footer className="from-secondary bg-gradient-to-t to-[#535353] px-[10vw] py-[2%] md:px-[5vw]">
+    <footer className="from-secondary bg-gradient-to-t to-[#535353] px-[10vw] py-[6%] md:px-[5vw] md:py-[4%]">
       <section>
         <div className={`flex justify-between md:px-[8vw] ${linkFontSize}`}>
           {/* Menu One */}
@@ -43,21 +43,22 @@ const Footer = () => {
             </h4>
             <Link
               to="/"
-              className={`mt-[1.2em] flex items-center gap-x-[1em] ${path === "/" ? "text-primary" : "hover:opacity-70"}`}
+              className={`mt-[1.2em] flex items-center gap-x-[0.6em] ${path === "/" ? "text-primary" : "hover:opacity-70"}`}
             >
-              <span className="text-[2em]">&#62;</span> Home
+              <span className="text-[1.5em] text-white">&#10095;</span> Home
             </Link>
             <Link
               to="/trainers"
-              className={`flex items-center gap-x-[1em] ${path === "/trainers" ? "text-primary" : "hover:opacity-70"}`}
+              className={`mt-[0.2em] flex items-center gap-x-[0.6em] ${path === "/trainers" ? "text-primary" : "hover:opacity-70"}`}
             >
-              <span className="text-[2em]">&#62;</span> Our Trainers
+              <span className="text-[1.5em] text-white">&#10095;</span> Our
+              Trainers
             </Link>
             <Link
               to="/contact"
-              className={`flex items-center gap-x-[1em] ${path === "/contact" ? "text-primary" : "hover:opacity-70"}`}
+              className={`mt-[0.2em] flex items-center gap-x-[0.6em] ${path === "/contact" ? "text-primary" : "hover:opacity-70"}`}
             >
-              <span className="text-[2em]">&#62;</span> Contact
+              <span className="text-[1.5em] text-white">&#10095;</span> Contact
             </Link>
           </nav>
           {/* Menu Three*/}
@@ -68,9 +69,9 @@ const Footer = () => {
               Opening Hours
             </h4>
             <li className="mt-[1.5em]">Monday - Sunday</li>
-            <li className="mt-[1.2em]">
+            <li className="mt-[0.3em]">
               09:00 am - 09:00 pm
-              <hr className="mt-[1.2em] border-b-[#ADA19A]" />
+              <hr className="mt-[0.7em] border-b-[#ADA19A]" />
             </li>
           </ul>
         </div>

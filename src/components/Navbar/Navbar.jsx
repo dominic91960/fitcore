@@ -16,21 +16,25 @@ const Navbar = () => {
         className={`mx-auto flex items-center justify-between px-[10vw] py-5 sm:py-8 md:px-[5vw] 2xl:py-10 ${isToggled && "bg-secondary"}`}
       >
         <h1
-          className="text-sm font-semibold transition-transform duration-300 hover:scale-105 md:text-xl 2xl:text-2xl"
+          className="text-sm font-semibold drop-shadow-[1px_1px_1px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105 md:text-xl 2xl:text-2xl"
           onClick={() => isToggled && handleClick()}
         >
           <Link to="/">FitCore</Link>
         </h1>
         <nav className="hidden space-x-8 text-xs md:block xl:space-x-16 2xl:text-base">
           <Link
-            className={path === "/" ? "text-primary" : "hover:opacity-70"}
+            className={
+              path === "/" ? "text-primary" : "text-lift hover:opacity-70"
+            }
             to="/"
           >
             Home
           </Link>
           <Link
             className={
-              path === "/trainers" ? "text-primary" : "hover:opacity-70"
+              path === "/trainers"
+                ? "text-primary"
+                : "text-lift hover:opacity-70"
             }
             to="/trainers"
           >
@@ -38,7 +42,9 @@ const Navbar = () => {
           </Link>
           <Link
             className={
-              path === "/contact" ? "text-primary" : "hover:opacity-70"
+              path === "/contact"
+                ? "text-primary"
+                : "text-lift hover:opacity-70"
             }
             to="/contact"
           >
@@ -54,7 +60,7 @@ const Navbar = () => {
           className={`${isToggled ? "style-one" : ""} relative h-4 w-6 transition-opacity duration-300 md:hidden`}
           onClick={handleClick}
         >
-          <div className="absolute -mt-[0.5px] h-[1px] w-full rounded bg-white transition-all duration-700 ease-in-out before:absolute before:left-0 before:h-[1px] before:w-full before:-translate-y-[6px] before:rounded before:bg-white before:transition-transform before:duration-700 before:ease-in-out after:absolute after:left-0 after:h-[1px] after:w-full after:translate-y-[6px] after:rounded after:bg-white after:transition-transform after:duration-700 after:ease-in-out"></div>
+          <div className="absolute -mt-[0.5px] h-[1px] w-full rounded bg-white drop-shadow-[1px_1px_1px_rgba(0,0,0,0.5)] transition-all duration-700 ease-in-out before:absolute before:left-0 before:h-[1px] before:w-full before:-translate-y-[6px] before:rounded before:bg-white before:transition-transform before:duration-700 before:ease-in-out after:absolute after:left-0 after:h-[1px] after:w-full after:translate-y-[6px] after:rounded after:bg-white after:transition-transform after:duration-700 after:ease-in-out"></div>
         </button>
       </section>
       {/* MOBILE MENU */}

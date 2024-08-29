@@ -26,7 +26,7 @@ const Process = () => {
       </p>
       <menu className="mx-auto grid max-w-screen-xl grid-cols-2 grid-rows-2 gap-y-10 py-10 md:grid-cols-4 md:grid-rows-1 md:pb-[10%] md:pt-[7%]">
         {data.map(({ img, txt }, i) => (
-          <figure>
+          <figure key={i}>
             <img
               src={img}
               alt="Connect with us"
