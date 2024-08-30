@@ -39,6 +39,7 @@ const Contact = () => {
   return (
     <>
       <ImageSection alt="A trainer" bgMobile={bgMobile} bgDesktop={bgDesktop} />
+      {/* CARD SECTION */}
       <section className="px-[10vw] text-center md:px-[5vw]">
         <h2 className="mt-[1.2em] text-[12px] font-medium sm:text-[18px] md:text-[22px] lg:text-[30px] xl:text-[36px] 2xl:text-[42px]">
           Connect with us for fitness support
@@ -69,6 +70,7 @@ const Contact = () => {
           ))}
         </article>
       </section>
+      {/* LOCATION SECTION */}
       <section className="h-[200px] sm:h-[450px]">
         <iframe
           title="location"
@@ -79,6 +81,7 @@ const Contact = () => {
           <a href="https://www.gps.ie/">gps trackers</a>
         </iframe>
       </section>
+      {/* FORM SECTION */}
       <section className="bg-[url('./assets/Contact/form-bg.png')] bg-cover bg-center px-[10vw] md:px-[5vw]">
         <form
           onSubmit={handleFormSubmit}
