@@ -92,7 +92,7 @@ const Trainers = () => {
         bgDesktop={bgDesktop}
         title={["We offer specialized training from", "our expert team"]}
       />
-
+      {/* -------- -------- TRAINERS SECTION -------- -------- */}
       <section className="px-[10vw] md:px-[5vw]">
         {trainerData.map(
           ({ img, name, role, roleDesc, qual, clients, rating }, i) => (
@@ -150,7 +150,7 @@ const Trainers = () => {
           ),
         )}
       </section>
-
+      {/* -------- -------- REVIEW SECTION -------- -------- */}
       <section className="bg-gradient-to-t from-[#454545] via-[#969696] to-[#D9D9D9] px-[10vw] pb-[11.5%] md:px-[5vw]">
         <h2 className="pb-[1em] pt-[1.5em] text-center font-extrabold uppercase text-black">
           Success <span className="text-primary">story</span>
