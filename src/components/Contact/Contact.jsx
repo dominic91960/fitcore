@@ -9,14 +9,14 @@ const data = [
 
 const Contact = () => {
   return (
-    <section className="from-secondary bg-gradient-to-r to-[#666666] px-[10vw] py-6 md:px-[5vw] md:py-0">
+    <section className="bg-gradient-to-r from-secondary to-[#666666] px-[10vw] py-6 md:px-[5vw] md:py-0">
       <h2 className="text-center text-[22px] font-bold uppercase md:hidden">
         Welcome to <span className="text-primary">fitcore</span>
       </h2>
       <figure className="flex flex-col items-center md:flex-row-reverse md:items-stretch md:pt-6">
         {/* Image */}
         <div className="relative mx-auto my-4 flex w-[90%] justify-center md:my-0 md:w-[65%] md:items-end">
-          <img src={img} alt="Bodybuilder image" className="z-10 h-fit" />
+          <img src={img} alt="A bodybuilder" className="z-10 h-fit" />
           <div className="absolute h-full w-[80%] border-4 border-b-0 border-[#04D9FF] md:top-0 md:h-[90%] md:w-[87%] md:border-b-4"></div>
           <div className="absolute z-10 h-full w-[80%] border-b-4 border-[#04D9FF] md:hidden"></div>
         </div>

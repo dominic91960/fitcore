@@ -69,7 +69,7 @@ const Contact = () => {
           ))}
         </article>
       </section>
-      {/* <section className="h-[200px] sm:h-[450px]">
+      <section className="h-[200px] sm:h-[450px]">
         <iframe
           title="location"
           width="100%"
@@ -78,7 +78,7 @@ const Contact = () => {
         >
           <a href="https://www.gps.ie/">gps trackers</a>
         </iframe>
-      </section> */}
+      </section>
       <section className="bg-[url('./assets/Contact/form-bg.png')] bg-cover bg-center px-[10vw] md:px-[5vw]">
         <form
           onSubmit={handleFormSubmit}
