@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import fb from "../../assets/Footer/facebook.png";
-import li from "../../assets/Footer/linked-in.png";
-import tw from "../../assets/Footer/twitter.png";
-import ig from "../../assets/Footer/instagram.png";
-import cp from "../../assets/Footer/copyright.png";
+
+import fb from "../assets/images/Footer/facebook.png";
+import li from "../assets/images/Footer/linked-in.png";
+import tw from "../assets/images/Footer/twitter.png";
+import ig from "../assets/images/Footer/instagram.png";
+import cp from "../assets/images/Footer/copyright.png";
 
 const Footer = () => {
   const path = useLocation().pathname;
@@ -15,7 +16,7 @@ const Footer = () => {
     "text-[7px] sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-[12px] 2xl:text-[13px]";
 
   return (
-    <footer className="from-secondary bg-gradient-to-t to-[#535353] px-[10vw] py-[6%] md:px-[5vw] md:py-[4%]">
+    <footer className="bg-gradient-to-t from-secondary to-[#535353] px-[10vw] py-[6%] md:px-[5vw] md:py-[4%]">
       <section>
         <div className={`flex justify-between md:px-[8vw] ${linkFontSize}`}>
           {/* Menu One */}

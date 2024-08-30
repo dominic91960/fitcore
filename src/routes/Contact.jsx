@@ -1,12 +1,12 @@
-import ImageSection from "../components/ImageSection/ImageSection";
-import Input from "../components/Input/Input";
+import ImageSection from "../components/ImageSection";
+import Input from "../components/Input";
 
-import bgMobile from "../assets/Contact/bg-mobile.png";
-import bgDesktop from "../assets/Contact/bg-desktop.png";
-import location from "../assets/Contact/location.png";
-import phone from "../assets/Contact/phone.png";
-import email from "../assets/Contact/email.png";
-import clock from "../assets/Contact/clock.png";
+import bgMobile from "../assets/images/Contact/bg-mobile.png";
+import bgDesktop from "../assets/images/Contact/bg-desktop.png";
+import location from "../assets/images/Contact/location.png";
+import phone from "../assets/images/Contact/phone.png";
+import email from "../assets/images/Contact/email.png";
+import clock from "../assets/images/Contact/clock.png";
 
 const data = [
   {
@@ -82,7 +82,7 @@ const Contact = () => {
         </iframe>
       </section>
       {/* FORM SECTION */}
-      <section className="bg-[url('./assets/Contact/form-bg.png')] bg-cover bg-center px-[10vw] md:px-[5vw]">
+      <section className="bg-[url('./assets/images/Contact/form-bg.png')] bg-cover bg-center px-[10vw] md:px-[5vw]">
         <form
           onSubmit={handleFormSubmit}
           className="flex w-fit flex-col py-[8%] text-center sm:pb-[12%] sm:pt-[6%] sm:text-left"

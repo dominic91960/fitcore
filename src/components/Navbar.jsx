@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./Navbar.css";
+import "../assets/styles/Navbar.css";
 
 const Navbar = () => {
   const path = useLocation().pathname;
@@ -65,7 +65,7 @@ const Navbar = () => {
       </section>
       {/* MOBILE MENU */}
       <section
-        className={`${isToggled ? "flex md:hidden" : "hidden"} animate-open-menu bg-secondary absolute w-full origin-top justify-center`}
+        className={`${isToggled ? "flex md:hidden" : "hidden"} animate-open-menu absolute w-full origin-top justify-center bg-secondary`}
         onClick={handleClick}
       >
         <nav className="flex w-full flex-col px-[10vw] pb-8 text-xs">

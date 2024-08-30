@@ -1,17 +1,19 @@
 import Slider from "react-slick";
 
-import ImageSection from "../components/ImageSection/ImageSection";
-import bgMobile from "../assets/Trainers/bg-mobile.png";
-import bgDesktop from "../assets/Trainers/bg-desktop.png";
-import kevin from "../assets/Trainers/kevin.png";
-import brian from "../assets/Trainers/brian.png";
-import shene from "../assets/Trainers/shene.png";
-import alex from "../assets/Trainers/alex.png";
-import one from "../assets/Trainers/review-one.png";
-import two from "../assets/Trainers/review-two.png";
-import three from "../assets/Trainers/review-three.png";
+import ImageSection from "../components/ImageSection";
+import bgMobile from "../assets/images/Trainers/bg-mobile.png";
+import bgDesktop from "../assets/images/Trainers/bg-desktop.png";
+import kevin from "../assets/images/Trainers/kevin.png";
+import brian from "../assets/images/Trainers/brian.png";
+import shene from "../assets/images/Trainers/shene.png";
+import alex from "../assets/images/Trainers/alex.png";
+import one from "../assets/images/Trainers/review-one.png";
+import two from "../assets/images/Trainers/review-two.png";
+import three from "../assets/images/Trainers/review-three.png";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../assets/styles/Reviews.css";
 
 const trainerData = [
   {
@@ -90,7 +92,7 @@ const Trainers = () => {
         bgDesktop={bgDesktop}
         title={["We offer specialized training from", "our expert team"]}
       />
-      {/* TRAINERS SECTION */}
+
       <section className="px-[10vw] md:px-[5vw]">
         {trainerData.map(
           ({ img, name, role, roleDesc, qual, clients, rating }, i) => (
@@ -148,7 +150,6 @@ const Trainers = () => {
           ),
         )}
       </section>
-      {/* REVIEW SECTION */}
 
       <section className="bg-gradient-to-t from-[#454545] via-[#969696] to-[#D9D9D9] px-[10vw] pb-[11.5%] md:px-[5vw]">
         <h2 className="pb-[1em] pt-[1.5em] text-center font-extrabold uppercase text-black">
